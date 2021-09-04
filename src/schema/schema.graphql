@@ -1,6 +1,7 @@
 type Query{
     "Retorna lista de estudiantes"
     estudiantes: [Estudiante]!
+    cursos: [Curso]!
 }
 
 "Retorna Objeto estudiante"
@@ -10,7 +11,7 @@ type Estudiante{
     name: String!
     email: String!
     website: String!
-    courses: [ Curso ]
+    courses: [ Curso ]!
 }
 
 type Curso{

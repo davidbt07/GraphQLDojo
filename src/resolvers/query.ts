@@ -5,6 +5,9 @@ const query: IResolvers = {
        Query: {
            estudiantes(): any {
                return database.estudiantes;
+           },
+           cursos(): any{
+               return database.cursos;
            }
        }
 }
